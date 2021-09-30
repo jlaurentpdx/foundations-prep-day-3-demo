@@ -1,58 +1,108 @@
-body, html {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 header {
-    width: 400px;
-    background-color: red;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 5rem;
+    color: slategray;
     text-align: center;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-h1, h2 {
-    margin: 0;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 70px;
-}
-
-h2 {
-    font-weight: 400;
-}
-
-main {
-    background-color: white;
-    width: 400px;
-    margin-left: 10px;
+  }
+  
+  body {
+    background: seashell;
+    font-family: 'Rampart One', cursive;
     font-size: 2rem;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: bold;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 10px;
+  }
+  
+  input[type=text], select {
+    border: 3px solid lightgray;
+    border-radius: 5%;
+    background: white;
+    color: darkslategray;
+    width: 45%;
+  }
+  
+  footer {
+    margin-right: 5%;
+    font-size: 0.8rem;
+    color: slategray;
+    text-align: right;
+  }
+  
+  .inputs {
+    color: slategray;
     text-align: center;
-}
-
-footer {
-    height: 35px;
-    background-color: red;
-    width: 400px;
-    margin-left: 10px;
-    border-radius: 0px 0px 20px 20px;
-}
-
-
+    justify-self: center;
+    width: 350px;
+    margin: 20px auto;
+  }
+  
+  .paper {
+    background: lightgray;
+    border-radius: 5px;
+    padding: 8px;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .name-tag {
+    background:red;
+    color: white;
+    height: 100%;
+    border-radius: 10px;
+  
+    display: grid;
+    grid-template-rows: 27% 18% 4fr 14%;
+    justify-items: center;
+    align-items: top;
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .greeting {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 3.75rem;
+  }
+  
+  .name-and-pronouns {
+    place-self: stretch;
+  
+    display: grid;
+    place-items: center;
+    
+    background: white;
+    color: darkslategray;
+    font-family: cursive;
+    font-size: 1.7rem;
+    padding: 4px;
+  }
+  
+  .pronouns {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+  
+  button {
+    background: seashell;
+    border: 3px dashed slategray;
+    border-radius: 10px;
+    color: darkslategray;
+    font-family: 'Rampart One', 'cursive';
+    font-size: 1.7rem;
+    margin: 20px;
+  }
+  
+  button:hover {
+    background: white;
+    letter-spacing: 2px;
+  }
+  
+  #counter-message {
+    font-size: 1rem;
+  }

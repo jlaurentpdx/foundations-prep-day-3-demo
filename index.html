@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <title>Nametag Generator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Rampart+One&family=Special+Elite&display=swap');
+  </style>
 </head>
-
+<header>Nametag Generator</header>
 <body>
-    <script type="module" src="./app.js"></script>
-    <section id="controls">
-        <input type="text" name="name-tag-name" id="name">
-        <button id="generate">Generate Name Tag</button>
-    </section>
-    <section id="name-tag">
-        <header>
-            <h1>Hello</h1>
-            <h2>my name is</h2>
-        </header>
-        <main id="first-name">Jordan</main>
-        <footer></footer>
-    </section>
+  <div class="paper">
+    <p id="name-tag" class="name-tag">
+      <strong class="greeting">Hello</strong>
+      my name is
+      <em class="name-and-pronouns">
+        <em id="name" class="name">Mr. Peanutbutter</em>
+        <em id="pronouns" class="pronouns">they/them</em>
+      </em>
+    </p>
+  </div>
+
+  <section class="inputs">
+    <label>Name: <input id="name-input" type="text" maxlength="16"></label><br>
+    <label>Pronouns: <input id="pronouns-input" type="text" maxlength="16"></label><br>
+
+    <label>Color: 
+      <select name="color-select" id="color-select">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="lightpink">Pink</option>
+        <option value="lightgreen">Green</option>
+      </select><br>
+    </label>
+
+    <label>Font: 
+      <select name="font-select" id="font-select">
+        <option value="Cursive">Cursive</option>
+        <option value="Pacifico">Pacifico</option>
+        <option value="Permanent Marker">Permanent Marker</option>
+        <option value="Rampart One">Rampart One</option>
+        <option value="Special Elite">Special Elite</option>
+      </select><br>
+    </label>
+
+    <button id="update-button">Update your nametag</button>
+    <p id="counter-message">You've used <span id="counter-value">0</span> name tags.<br>
+    <span id="counter-remark">Go ahead. Give it a try.</span></p>
+  </section>
+
+  <script src="app.js" type="module"></script>
 </body>
+<footer>- codo by jojo, 2021</footer>
 </html>
